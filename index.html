@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shiv Patel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400;500&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+<!-- ── Navigation ── -->
+<nav>
+  <div class="nav-logo" onclick="showPage('home')">Shiv<span> </span>Patel</div>
+  <div class="nav-links">
+    <button class="nav-link active" onclick="showPage('home')" id="nav-home">Home</button>
+    <!-- <button class="nav-link" onclick="showPage('experience')" id="nav-experience">Experience</button> -->
+    <!-- <button class="nav-link" onclick="showPage('extras')" id="nav-extras">Extra Curriculars</button> -->
+    <!-- <button class="nav-link" onclick="showPage('projects')" id="nav-projects">Projects</button> -->
+    <!--<button class="nav-link resume-link" onclick="showPage('resume')" id="nav-resume">Resume ↗</button>-->
+  </div>
+  <div class="nav-right">
+    <div class="theme-toggle" onclick="toggleTheme()" title="Toggle theme"></div>
+  </div>
+</nav>
+ 
+<!-- ═══════════════ HOME PAGE ═══════════════ -->
+<div class="page active" id="page-home">
+  <div class="home-hero">
+    <div class="hero-layout">
+      <div class="hero-text">
+        <p class="hero-eyebrow">// Welcome to my 🏠 on the 🕸️</p>
+        <h1 class="hero-name">Shiv<br><em>Patel</em></h1>
+    <div class="typing-container">
+      <span class="typing-prefix">~/</span>
+      <span id="typed-text"></span><span class="cursor"></span>
+    </div>
+    <div class="social-links">
+      <a class="social-link" href="mailto:pates302@mcmaster.ca">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        pates302[at]mcmaster[dot]ca
+      </a>
+      <a class="social-link" href="https://www.linkedin.com/in/shiv-sp/" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+        LinkedIn
+      </a>
+      <a class="social-link" href="https://github.com/Shiv-sp" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+        GitHub
+      </a>
+      <a class="social-link" href="https://x.com/shivvppatel?s=11" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        Twitter/X
+      </a>
+      <a class="social-link" href="https://open.spotify.com/user/qxnbjer5lfi9ng6d7f2dh5aeg?si=7543e67d401d4a65" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+        Spotify
+      </a>
+    </div>
+      <p class="scroll-hint">feel free to look around :)</p>
+      </div><!-- end .hero-text -->
+ 
+      <div class="hero-photo-wrap">
+        <div class="hero-photo">
+          <img src="/assets/IMG_9984.jpg" alt="Shiv Patel" onerror="this.style.display='none'; this.parentElement.classList.add('hero-photo--empty')" />
+        </div>
+      </div>
+ 
+    </div><!-- end .hero-layout -->
+  </div>
+  
+
+  <div class="divider"></div>
+
+  <div class="home-about">
+    <div class="about-text">
+      <p class="section-label"><strong>A bit about me</strong></p>
+      <p>Hey, I'm <strong>Shiv</strong>, a passionate individual and problem solver based in <strong>Toronto, Canada</strong>. I love building things that bridge the gap between hardware and software, while also making a real-world impact.</p>
+      <p>Currently, I'm studying <strong>Computer Engineering</strong> at <strong>McMaster University</strong>, and I'm always looking for new challenges, collaborations, and opportunities to grow.</p>
+      <p>When I'm not solving problems, you'll find me playing <strong> cricket, baseball, or basketball</strong> and listening to <strong>music</strong> (s/o <strong>drake</strong> and <strong>taylor swift</strong>).</p>
+      <p><u><strong>Oh, I'm also seeking Summer 2027 internships in Project/Program Management :))</strong></u></p>
+    </div>
+    <div class="about-stats">
+      <div class="stat-box">
+        <div class="stat-num">2+</div>
+        <div class="stat-label">years of experience</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">20+</div>
+        <div class="stat-label">projects completed</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">5</div>
+        <div class="stat-label">clubs & orgs</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">∞</div>
+        <div class="stat-label">cups of coffee</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ═══════════════ RESUME PAGE ═══════════════ -->
+<div class="page" id="page-resume">
+  <div class="resume-section">
+    <p class="section-label">// curriculum vitae</p>
+    <h2 class="section-title" style="text-align:left">My<br><em>Résumé.</em></h2>
+    <p class="resume-intro">A snapshot of my background, skills, and achievements. Download the full PDF or browse a quick summary below.</p>
+
+    <div>
+      <a class="resume-cta" href="#" onclick="alert('Updated resume coming soon!')">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+        Download Resume PDF
+      </a>
+    </div>
+
+    <div class="resume-preview">
+      <div class="resume-block">
+        <div class="resume-block-title">Education</div>
+        <div class="resume-row">
+          <div>
+            <div class="resume-item-name">Bachelor of Engineering, Computer Engineering Co-op</div>
+            <div class="resume-item-detail">McMaster University · Hamilton, ON</div>
+          </div>
+          <div class="resume-item-date">2023 – 2029 (Expected)</div>
+        </div>
+      </div>
+
+      <div class="resume-block">
+        <div class="resume-block-title">Experience</div>
+        <div class="resume-row">
+          <div>
+            <div class="resume-item-name">Program Management Intern — AMD</div>
+            <div class="resume-item-detail">AI Data center GPUs</div>
+          </div>
+          <div class="resume-item-date">May 2026 - Present</div>
+        </div>
+        <div class="resume-row">
+          <div>
+            <div class="resume-item-name">Systems Implementation Intern — Candor Industries Inc</div>
+            <div class="resume-item-detail">Bridged legacy and modern ERP systems</div>
+          </div>
+          <div class="resume-item-date">April 2025 - Aug. 2025</div>
+        </div>
+        <div class="resume-row">
+          <div>
+            <div class="resume-item-name">Community Advisor — McMaster University (HCS)</div>
+            <div class="resume-item-detail">Engineering innovation and leadership in residence</div>
+          </div>
+          <div class="resume-item-date">April 2024 - May 2026</div>
+        </div>
+      </div>
+
+      <div class="resume-block">
+        <div class="resume-block-title">Skills</div>
+        <div class="resume-row resume-skills-row">
+          <span class="tag">Python</span>
+          <span class="tag">C/C++</span>
+          <span class="tag">Java</span>
+          <span class="tag">MATLAB/Simulink</span>
+          <span class="tag">AutoCAD</span>
+          <span class="tag">OrCAD</span>
+          <span class="tag">Quartus</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Git/GitHub</span>
+          <span class="tag">MS365</span>
+        </div>
+      </div>
+
+      <div class="resume-block resume-block--last">
+        <div class="resume-block-title">Awards & Honors</div>
+        <div class="resume-row">
+          <div class="resume-item-name">McMaster Engineering Dean of Excellence Award</div>
+          <div class="resume-item-date">Sept. 2023</div>
+        </div>
+        <div class="resume-row">
+          <div class="resume-item-name">McMaster University Award of Excellence </div>
+          <div class="resume-item-date">Sept. 2023</div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Footer ── -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-text">
+      Made with <span class="footer-heart" aria-label="love">♥</span> by SP
+    </span>
+    <span class="footer-divider">·</span>
+    <span class="footer-copy">© 2026</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
